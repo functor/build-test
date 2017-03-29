@@ -34,7 +34,7 @@
     "files":
         [
            {
-             "includePattern": "/var/build/RPMS/(.rpm)", 
+             "includePattern": "./build/RPMS/(.rpm)", 
              "uploadPattern": "/"
            }
         ],
