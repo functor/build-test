@@ -1,6 +1,15 @@
 services:
   - docker
 
+pre_script:
+  - mkdir -p /var/build/RPMS
 script:
-  - docker run ubuntu /bin/sh -c "touch RESULT"
-  - ls -la
+  - docker run -v /var/build:/build ubuntu /bin/sh -c "touch /build/RPMS/test-build.rpm"
+  - ls -la /var/build/RPMS
+
+deploy:
+  provider: bintray
+  file: ".bintray.json"
+  user: functor
+  key: "KEY"
+  dry-run: true
