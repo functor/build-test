@@ -3,3 +3,4 @@ services:
 
 script:
 - docker run ubuntu /bin/sg/ -c "touch RESULT"
+- ls -la
