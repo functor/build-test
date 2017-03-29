@@ -7,6 +7,7 @@ before_script:
 script:
   - docker run -v ${TRAVIS_BUILD_DIR}/build:/build ubuntu /bin/sh -c "touch /build/RPMS/test-build.rpm"
   - ls -la ${TRAVIS_BUILD_DIR}/build/RPMS
+  - echo ${TRAVIS_BUILD_DIR}
 
 deploy:
   provider: bintray
