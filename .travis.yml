@@ -2,5 +2,5 @@ services:
   - docker
 
 script:
-- docker run ubuntu /bin/sg/ -c "touch RESULT"
+- docker run ubuntu /bin/sh/ -c "touch RESULT"
 - ls -la
