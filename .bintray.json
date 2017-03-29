@@ -4,7 +4,7 @@
         "repo": "rpm",
         "subject": "functor",
 
-        "desc": "Testing bintray publising."
+        "desc": "Testing bintray publising.",
         "website_url": "https://www.github.com/functor/test-build",
         "issue_tracker_url": "https://github.com/functor/test-build/issues",
         "vcs_url": "https://github.com/functor-test-build.git",
